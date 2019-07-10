@@ -12,6 +12,7 @@
 
 #### Gulp
 ![](https://i.imgur.com/ji6l3Jt.png)
+
 Gulp 是**任務管理工具**，主要是可以自動化處理、編譯我們的程式碼、樣式或轉換檔案格式等功能。
 
 雖然 Gulp 編譯速度很快，但主力還是在於排程靜態檔案的編譯**任務**。隨著 SPA 開發模式的崛起，為了因應 SPA 的開發模式，前端會將檔案拆成一個一個的模組元件，而 Gulp 在處理這些散落的模組化程式碼是相對弱勢的。
@@ -142,14 +143,17 @@ module.exports = {
 ```
 
 存檔後終端機輸入`npm run start`後報錯
+
 ![](https://i.imgur.com/n30wIl6.png)
 
 因為我要編譯的 index.js 還放在根目錄
+
 ![](https://i.imgur.com/YaM8Oh5.png)
 
 趕快創建一個 src 資料夾並把檔案移進去
 終端機再次輸入`npm run start`後就成功了
 webpack 將編譯後的檔案輸出到 dist 資料夾
+
 ![](https://i.imgur.com/I6LYW4R.png)
 
 ### output 輸出
@@ -185,5 +189,6 @@ module.exports = {
 ```
 終端機輸入 `npm run start` 後
 就成功編譯在我自己指定的 myBuild 資料夾囉
+
 ![](https://i.imgur.com/uMH7vBO.png)
 
